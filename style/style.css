@@ -1,5 +1,6 @@
 * {
     font-family: sans-serif;
+    outline-color: transparent;
 }
 
 body {
@@ -7,6 +8,7 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
+    background: rgba(147, 147, 148, 0.5);
 }
 
 a {
@@ -105,4 +107,311 @@ footer:after{
 }
 
 footer p {
+    color: rgb(255, 255, 255)
+}
+
+/*------------------------- Apply Page -------------------------*/
+
+.wrapper{
+	width: 800px;
+	margin:5% auto;
+}
+
+.form-area{
+    display: flex;
+    border: 5px solid rgb(0, 0, 255);
+    box-sizing: border-box;
+    box-shadow: 15px 15px 25px 0 rgba(0, 0, 255, 0.6);
+	background:rgba(0,0,0, 0.8);
+	border-radius: 25px;
+	padding: 1.9em;
+}
+
+.details-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+	margin-right: 2px;
+}
+
+.details-area .input-field 
+{
+    width: 100%;
+    order: 0;
+}
+
+.details-area .input-field label {
+    display: inline-block;
+    width: 250px;
+}
+
+.details-area .input-field input {
+	background: transparent;
+    color: #fff;
+    border-radius: 15px;
+    margin-left: 19%;
+    width: 41%;
+}
+
+.details-area input,
+.details-area button{
+	padding: 2%;
+	margin-bottom: 1em;
+}
+
+.details-area .radio-field {
+    width: 50%;
+    order: 1;
+}
+
+.details-area .radio-field input {
+    margin-left: 20px;
+}
+
+.details-area .msg-area{
+    margin-left: 4%;
+    order:2;
+}
+.details-area .msg-area > textarea{
+    flex:20;
+    height: 210px;
+    width: 300px;
+    min-width: 18em;
+    border: 2px solid white;
+    border-radius: 10px;
+    background:transparent;
+	color:#fff;
+    padding: 15px;
+    order: 3;
+}
+
+.details-area button{
+    order: 4;
+	background:blue;
+	color:#fff;
+	border:0;
+	padding: 15px 50px;
+	border-radius: 40px;
+
+}
+label{
+	color: #fff;
+	line-height: 40px;
+
+}
+h2{
+	display: flex;
+	justify-content: center
+}
+
+
+/*------------------------- About Page -------------------------*/
+
+.contact {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: ease-in 0.5s;
+}
+
+.cancel {
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 95%;
+    padding: 10px 15px 10px 15px;
+    font-size: 16px;
+    color: white;
+    border: 2px solid rgb(3, 169, 244);
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px 0 rgba(3, 169, 244, 0.5);
+    transition: ease-in 0.5s;
+}
+
+.cancel:hover {
+    font-size: 15px;
+    color: rgb(3, 169, 244);
+    border: 2px solid rgb(255, 255, 255);
+    transition: ease-in 0.5s;
+}
+
+.about-container {
+    padding: 10px
+}
+
+.about-intro {
+    display: inline-flex;
+    margin: auto;
+    padding: 15px;
+    border: 3px solid goldenrod;
+    background-color: rgba(2, 29, 116, 0.9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about-intro img {
+    width: 80px;
+    height: 60px;
+}
+
+.about-intro h1 {
+    color: rgb(253, 188, 22);
+}
+
+.about-intro p {
+    align-self: center;
+    color: white;
+    float: center;
+}
+
+.text-box {
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+    width: 800px;
+    background-color: rgb(158, 158, 158);
+    border-radius: 10px;
+}
+
+.text-box h1 {
+    margin-left: 5%;
+}
+
+.text-box p {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.glass{
+	/* background styles */
+	position: relative;
+	display: inline-block;
+	padding: 15px 25px;
+	background-color: green; /*for compatibility with older browsers*/
+	background-image: linear-gradient(blue,lightblue);
+
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px -2px #333;
+    text-shadow: 0px -1px #333;
+
+	/* text styles */
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+	font-family: sans-serif;
+    font-weight: 100;
+}
+
+.glass:after{
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: calc(100% - 4px);
+	height: 50%;
+	background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+}
+
+.glass:hover{
+	background: linear-gradient(rgb(0, 18, 119),rgb(0, 204, 255));
+}
+
+#school-one {
+    width: 250px;
+    height: 400px;
+    margin-top: 5%;
+    margin-right: 2.5%;
+    float: right;
+}
+
+#student-info {
+    margin-left: 31%;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    padding: 80px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid rgb(3, 169, 244);
+    box-sizing: border-box;
+    box-shadow: 15px 15px 25px 0 rgba(3, 116, 192, 0.5);
+    border-radius: 10px;
+}
+
+.box h2 {
+    margin: 0, 0, 30px;
+    padding: 0;
+    color: rgb(253, 253, 253);
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.box .inputBox {
+    position: relative;
+}
+
+.box .inputBox input, .box .inputBox textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(253, 253, 253);
+    letter-spacing: 1px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    width: 60%;
+    border: none;
+    border-bottom: 1px solid rgb(253, 253, 253);
+    outline: none; /* Removes the blue outline */
+    background: transparent;
+}
+
+.box .inputBox label {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    padding: 10px, 0;
+    font-size: 16px;
+    color: rgb(3, 169, 244);
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.box .inputBox textarea {
+    overflow: hidden;
+}
+
+.box input[type="submit"] { /* element[attribute=value] This is used to import an attribute into css code */
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgb(253, 253, 253);
+    background: rgb(3, 169, 244);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: ease-in 0.5s;
+}
+
+
+.box input[type="submit"]:hover {
+    background: transparent;
+    color: rgb(3, 169, 244);
+    border: 2px solid rgb(3, 169, 244);
+    font-size: 15px;
+    transition: ease-in 0.5s;
 }
