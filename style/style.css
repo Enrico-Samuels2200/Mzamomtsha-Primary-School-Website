@@ -19,7 +19,7 @@ a {
     margin: 0;
     padding: 0;
     height: 535px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(55, 0, 255, 0.5)), url("images/splash-bg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(55, 0, 255, 0.5)), url("images/school.jpg");
     background-size: cover;
 }
 
@@ -30,6 +30,7 @@ header nav {
     flex-wrap: nowrap;
     align-items: flex-end;
     justify-content: flex-end;
+    top:fixed ;
 }
 
 header nav a {
@@ -91,7 +92,7 @@ footer {
     position: relative;
     margin: 0;
     padding: 10px 0px 10px 10px;
-    height: 70px;
+    height: auto;
     background-color: rgb(0, 0, 0);
     background-image: linear-gradient(rgb(12, 12, 12),rgb(75, 74, 74));
 }
@@ -106,8 +107,72 @@ footer:after{
 	background: linear-gradient(rgba(139, 138, 138, 0.5), rgba(63, 62, 62, 0.1));
 }
 
+footer h3 {
+    color: rgb(0, 153, 255);
+}
+
 footer p {
-    color: rgb(255, 255, 255)
+    margin-left: 23px;
+    margin-right: 200px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+/*------------------------- Event Page -------------------------*/
+
+#event-intro {
+    width: 96.5%;
+}
+
+#student-info {
+    width: 700px;
+    margin: 2.9%;
+}
+
+#event-heading {
+    text-align: center;
+}
+
+#school-one {
+    width: 20%;
+    height: 400px;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+.event-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.event-container .event-item {
+    margin-top: 5%;
+    padding: 10px;
+    width: 300px;
+    border: 3px solid rgb(0, 202, 253);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(36, 36, 36); /*for compatibility with older browsers*/
+	background-image: linear-gradient(rgba(27, 27, 27, 0.5),rgb(14, 53, 77));
+}
+
+.event-container .event-item img {
+    margin-top: 2%;
+    margin-left: 3%;
+    width: 280px;
+    height: 250px;
+    border: 2px solid rgb(19, 100, 151);
+    border-radius: 10px;
+}
+
+.event-container .event-item p {
+    word-wrap: break-word;
+    margin-right: 5%;
+    margin-left: 5%;
+    color: white;
 }
 
 /*------------------------- Apply Page -------------------------*/
@@ -120,8 +185,6 @@ footer p {
 .form-area{
     display: flex;
     border: 5px solid rgb(0, 0, 255);
-    box-sizing: border-box;
-    box-shadow: 15px 15px 25px 0 rgba(0, 0, 255, 0.6);
 	background:rgba(0,0,0, 0.8);
 	border-radius: 25px;
 	padding: 1.9em;
@@ -204,7 +267,6 @@ h2{
 	justify-content: center
 }
 
-
 /*------------------------- About Page -------------------------*/
 
 .contact {
@@ -221,9 +283,8 @@ h2{
 }
 
 .cancel {
-    position: absolute;
-    margin-top: 1%;
-    margin-left: 95%;
+    top: 0;
+    margin-left: 99%;
     padding: 10px 15px 10px 15px;
     font-size: 16px;
     color: white;
@@ -241,6 +302,8 @@ h2{
 }
 
 .about-container {
+    display: flex;
+    flex-wrap: wrap;
     padding: 10px
 }
 
@@ -273,15 +336,11 @@ h2{
 
 .text-box {
     display: inline-flex;
-    flex: 0 0 auto;
     flex-wrap: wrap;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-bottom: 5%;
-    padding: 2%;
-    width: 800px;
+    margin: 5%;
     background-color: rgb(158, 158, 158);
     border-radius: 10px;
+    word-wrap: break-all;
 }
 
 .text-box h1 {
@@ -289,14 +348,16 @@ h2{
 }
 
 .text-box p {
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20px;
 }
 
 .glass{
 	/* background styles */
 	position: relative;
-	display: inline-block;
+    display: inline-block;
+    margin-left: 41%;
 	padding: 15px 25px;
 	background-color: green; /*for compatibility with older browsers*/
 	background-image: linear-gradient(blue,lightblue);
@@ -325,18 +386,6 @@ h2{
 
 .glass:hover{
 	background: linear-gradient(rgb(0, 18, 119),rgb(0, 204, 255));
-}
-
-#school-one {
-    width: 250px;
-    height: 400px;
-    margin-top: 5%;
-    margin-right: 2.5%;
-    float: right;
-}
-
-#student-info {
-    margin-left: 31%;
 }
 
 .box {
